@@ -1,4 +1,3 @@
-
 #ifndef GENERAVIMAS_H
 #define GENERAVIMAS_H
 

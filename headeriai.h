@@ -1,4 +1,3 @@
-
 #ifndef HEADERIAI_H_INCLUDED
 #define HEADERIAI_H_INCLUDED
 
@@ -12,7 +11,6 @@
 #include <fstream>
 #include <exception>
 #include <list>
-#include <deque>
 #include <sstream>
 
 using std::cin;
@@ -28,7 +26,6 @@ using std::ifstream;
 using std::istringstream;
 using std::ostringstream;
 using std::to_string;
-using std::deque;
 using std::list;
 using std::find_if;
 
@@ -48,12 +45,12 @@ bool ArVienSkaiciai(const string s);
 bool ArEgzistuoja (string DuomFailas);
 string AtsakymoIvedimas();
 int IvedimasIntervale(int pradzia, int pabaiga, bool Breakinimui);
-double RaskVidurki (vector<int> pazymiai, int pazymiuSk);
-double RaskMediana (vector<int> pazymiai, int pazymiuSk);
+double RaskVidurki(int pazymiuSk, vector<int> pazymiai);
+double RaskMediana(int pazymiuSk, vector<int> pazymiai);
 double GalutinisBalas(double ndRez, int egzaminas);
 void GeneruokPazymius(Studentas &s);
 
-bool Lygink_5(Studentas &s1);
+bool Lygink_5(Studentas s1);
 
 template <class kont>
 void NuskaitykDuomenis (string DuomFailas, kont &studentai, bool &ArReikiaIvesti);

@@ -1,4 +1,3 @@
-
 #ifndef LAIKAS_H_INCLUDED
 #define LAIKAS_H_INCLUDED
 
@@ -20,3 +19,4 @@ class LaikoMatavimas {
 //laiko matavimo klase
 
 #endif
+

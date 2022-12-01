@@ -42,33 +42,37 @@ int main() {
       string kiekNd; //tikrinimui, ar namu darbu pazymiu skaicius zinomas
       string ArGeneruoti; //ar generuoti atsitiktini skaiciu
 
+      string a; //laikinas stringas vardui, pavardei set-inti
+
       do
       {
         Studentas s; //cia bus saugomi studento duomenys, pabaigoj bus pushinami i studentu vektoriu
 
         cout<<"Iveskite studento varda: "<<endl;
-        cin>>s.vardas;
+        cin>>a;
+        s.setVardas(a);
 
         cout<<"Iveskite studento pavarde: "<<endl;
-        cin>>s.pavarde;
+        cin>>a;
+        s.setPavarde(a);
 
         cout<<"Ar sugeneruoti studento namu darbu pazymius ir egzamino rezultata? Iveskite t/n:"<<endl;
         ArGeneruoti = AtsakymoIvedimas();
 
         if (ArGeneruoti == "t")
         {
-          GeneruokPazymius(s);
-          cout<<"Egzamino pazymys: "<<s.egzaminas<<endl<<"Pazymiu skaicius: "<<s.pazymiuSk<<endl<<"Pazymiai: ";
-          for (int i = 0; i<s.pazymiuSk; i++)
+          s.GeneruokPazymius();
+          cout<<"Egzamino pazymys: "<<s.getEgzaminas()<<endl<<"Pazymiu skaicius: "<<s.getPazymiuSk()<<endl<<"Pazymiai: ";
+          for (int i = 0; i<s.getPazymiuSk(); i++)
           {
-            cout<<s.pazymiai[i]<<endl;
+            cout<<s.getPazymys(i)<<endl;
           }
           cout<<endl;
         }
         else
         {
           cout<<"Iveskite studento egzamino rezultata (sveikaji skaiciu nuo 0 iki 10): "<<endl;
-          s.egzaminas=IvedimasIntervale(0,10,false);
+          s.setEgzaminas(IvedimasIntervale(0,10,false));
 
           cout<<"Ar zinomas namu darbu pazymiu skaicius? Iveskite t/n:"<<endl;
           kiekNd = AtsakymoIvedimas();
@@ -76,15 +80,15 @@ int main() {
           if (kiekNd == "t")
           {
             cout<<"Iveskite, kiek namu darbu pazymiu turi studentas (sveikaji skaiciu nuo 0 iki 40): "<<endl;
-            s.pazymiuSk=IvedimasIntervale(0,40,false);
+            s.setPazymiuSk(IvedimasIntervale(0,40,false));
 
-            if (s.pazymiuSk!=0)
+            if (s.getPazymiuSk()!=0)
             {
               cout<<"Iveskite namu darbu pazymius (sveikuosius skaicius nuo 0 iki 10): "<<endl;
 
-              for (int i=0; i<s.pazymiuSk; i++)
+              for (int i=0; i<s.getPazymiuSk(); i++)
               {
-                s.pazymiai.push_back(IvedimasIntervale(0,10,false));
+                s.setPazymys(IvedimasIntervale(0,10,false));
               }
             }
           }
@@ -92,24 +96,23 @@ int main() {
           {
             cout<<"Iveskite namu darbu pazymius (jei ivedete visus pazymius, iveskite -1):"<<endl;
             int ivestis; //laikinas kintamasis ivesciai patikrinti
+            int kiekis = 0; //kiek pazymiu praejo pro cikla
             do
             {
               ivestis = IvedimasIntervale(0,10,true);
               if (ivestis!=-1)
               {
-                s.pazymiai.push_back(ivestis);
+                s.setPazymys(ivestis);
+                kiekis++;
               }
               else break;
             } while (ivestis!=-1 || ivestis > 10);
-            s.pazymiuSk = s.pazymiai.size();
+            s.setPazymiuSk(kiekis);
           }
         }
         try{
-          s.ndVid = RaskVidurki(s.pazymiai, s.pazymiuSk);
-          s.galutinis = GalutinisBalas(s.ndVid, s.egzaminas);
-
-          s.mediana = RaskMediana(s.pazymiai, s.pazymiuSk);
-          s.galutinisMed = GalutinisBalas(s.mediana, s.egzaminas);
+          s.GalutinisBalas(true);
+          s.GalutinisBalas(false);
 
           cout<<"Ar bus daugiau studentu? Iveskite t/n: "<<endl;
           KitasStudentas = AtsakymoIvedimas();
