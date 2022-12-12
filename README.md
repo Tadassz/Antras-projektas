@@ -135,4 +135,85 @@ Duomenys isvesti i faila 'rez_blogieciai10000000list.txt'.
 
 10000000 irasu testas uztruko 132.82 s.
 
+O1, O2 ir O3 palyginimas su list'u ir antraja strategija:
 
+O1;
+
+Programos veikimo spartos testas su 1000000 studentu pradetas.
+
+Duomenys nuskaityti.
+Duomenu (1000000 studentu) nuskaitymas is failo uztruko 7.99403 s.
+1000000 studentu rusiavimas uztruko 1.17345 s.
+1000000 studentu (gerieciu) isvedimas i faila 'rez_gerieciai1000000list.txt' uztruko 0.0009987 s.
+Duomenys isvesti i faila 'rez_blogieciai1000000list.txt'.
+1000000 studentu (blogieciu) isvedimas i faila 'rez_blogieciai1000000list.txt' uztruko 2.60024 s.
+
+1000000 irasu testas uztruko 11.7707 s.
+
+Ar norite toliau testuoti (kitas testas - su 10000000 irasu)? Iveskite t/n:
+t
+
+Programos veikimo spartos testas su 10000000 studentu pradetas.
+
+Duomenys nuskaityti.
+Duomenu (10000000 studentu) nuskaitymas is failo uztruko 82.3904 s.
+10000000 studentu rusiavimas uztruko 20.3542 s.
+10000000 studentu (gerieciu) isvedimas i faila 'rez_gerieciai10000000list.txt' uztruko 0.00101 s.
+Duomenys isvesti i faila 'rez_blogieciai10000000list.txt'.
+10000000 studentu (blogieciu) isvedimas i faila 'rez_blogieciai10000000list.txt' uztruko 40.4798 s.
+
+10000000 irasu testas uztruko 143.228 s.
+
+O2;
+
+Programos veikimo spartos testas su 1000000 studentu pradetas.
+
+Duomenys nuskaityti.
+Duomenu (1000000 studentu) nuskaitymas is failo uztruko 8.18297 s.
+1000000 studentu rusiavimas uztruko 1.19663 s.
+1000000 studentu (gerieciu) isvedimas i faila 'rez_gerieciai1000000list.txt' uztruko 0.000719 s.
+Duomenys isvesti i faila 'rez_blogieciai1000000list.txt'.
+1000000 studentu (blogieciu) isvedimas i faila 'rez_blogieciai1000000list.txt' uztruko 2.59703 s.
+
+1000000 irasu testas uztruko 11.9809 s.
+
+Ar norite toliau testuoti (kitas testas - su 10000000 irasu)? Iveskite t/n:
+t
+
+Programos veikimo spartos testas su 10000000 studentu pradetas.
+
+Duomenys nuskaityti.
+Duomenu (10000000 studentu) nuskaitymas is failo uztruko 80.8211 s.
+10000000 studentu rusiavimas uztruko 17.6307 s.
+10000000 studentu (gerieciu) isvedimas i faila 'rez_gerieciai10000000list.txt' uztruko 0.0010029 s.
+Duomenys isvesti i faila 'rez_blogieciai10000000list.txt'.
+10000000 studentu (blogieciu) isvedimas i faila 'rez_blogieciai10000000list.txt' uztruko 39.2217 s.
+
+10000000 irasu testas uztruko 137.678 s.
+
+O3;
+
+Programos veikimo spartos testas su 1000000 studentu pradetas.
+
+Duomenys nuskaityti.
+Duomenu (1000000 studentu) nuskaitymas is failo uztruko 8.1453 s.
+1000000 studentu rusiavimas uztruko 1.16826 s.
+1000000 studentu (gerieciu) isvedimas i faila 'rez_gerieciai1000000list.txt' uztruko 0.0009989 s.
+Duomenys isvesti i faila 'rez_blogieciai1000000list.txt'.
+1000000 studentu (blogieciu) isvedimas i faila 'rez_blogieciai1000000list.txt' uztruko 2.55965 s.
+
+1000000 irasu testas uztruko 11.8772 s.
+
+Ar norite toliau testuoti (kitas testas - su 10000000 irasu)? Iveskite t/n:
+t
+
+Programos veikimo spartos testas su 10000000 studentu pradetas.
+
+Duomenys nuskaityti.
+Duomenu (10000000 studentu) nuskaitymas is failo uztruko 82.6049 s.
+10000000 studentu rusiavimas uztruko 15.7464 s.
+10000000 studentu (gerieciu) isvedimas i faila 'rez_gerieciai10000000list.txt' uztruko 0.0340159 s.
+Duomenys isvesti i faila 'rez_blogieciai10000000list.txt'.
+10000000 studentu (blogieciu) isvedimas i faila 'rez_blogieciai10000000list.txt' uztruko 40.3192 s.
+
+10000000 irasu testas uztruko 138.775 s.
