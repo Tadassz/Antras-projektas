@@ -217,3 +217,5 @@ Duomenys isvesti i faila 'rez_blogieciai10000000list.txt'.
 10000000 studentu (blogieciu) isvedimas i faila 'rez_blogieciai10000000list.txt' uztruko 40.3192 s.
 
 10000000 irasu testas uztruko 138.775 s.
+
+v.1.2 - rule of five
