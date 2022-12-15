@@ -219,3 +219,5 @@ Duomenys isvesti i faila 'rez_blogieciai10000000list.txt'.
 10000000 irasu testas uztruko 138.775 s.
 
 v.1.2 - rule of five
+
+v.1.5 - sukurta bazine klase ir is jos isvestine klase.
