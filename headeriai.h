@@ -11,7 +11,6 @@
 #include <fstream>
 #include <exception>
 #include <list>
-#include <deque>
 #include <sstream>
 
 using std::cin;
@@ -27,7 +26,6 @@ using std::ifstream;
 using std::istringstream;
 using std::ostringstream;
 using std::to_string;
-using std::deque;
 using std::list;
 using std::find_if;
 using std::move;
