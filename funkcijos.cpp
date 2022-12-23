@@ -85,7 +85,7 @@ int IvedimasIntervale(int pradzia, int pabaiga, bool Breakinimui) //bool kintama
 //generavimo klases konstruktorius
 AtsitiktinisSk::AtsitiktinisSk() : mt{rd()} {}
 
-//skaièiaus generavimas
+//skaiÃ¨iaus generavimas
 int AtsitiktinisSk::Skaicius(int pradzia, int pabaiga) {
     std::uniform_int_distribution<int> uid(pradzia, pabaiga);
     return uid(mt);
@@ -362,6 +362,5 @@ void PasirinktasTestas(int n)
 {
   if (n == 0) ProgramosSparta(vector <Studentas> (), "vector");
   else if (n == 1) ProgramosSparta(list <Studentas> (), "list");
-  else if (n == 2) ProgramosSparta(deque <Studentas> (), "deque");
   else cout<<"Atsaukiamas programos testavimas."<<endl;
 }
