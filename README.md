@@ -221,3 +221,6 @@ Duomenys isvesti i faila 'rez_blogieciai10000000list.txt'.
 v.1.2 - rule of five
 
 v.1.5 - sukurta bazine klase ir is jos isvestine klase.
+
+v.2.0 - html
+
